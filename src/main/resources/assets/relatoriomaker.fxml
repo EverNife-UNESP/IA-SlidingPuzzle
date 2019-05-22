@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.finalcraft.unesp.ia.javafx.controller.RelatorioController">
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="141.0" minHeight="10.0" prefHeight="141.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton buttonType="RAISED" onAction="#onSimulacao" style="-fx-background-color: #9cccff;" text="Executar 100 Simulações" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text="Busca Aleatória" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text="Busca Heuristica1" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text="Busca Heuristica2" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text="Busca Pessoal" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text="Tempo Processamento" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text="Solução" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label fx:id="operationNumber" alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text="N == 1" GridPane.columnIndex="3">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text="Posição" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label fx:id="posicao1" alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text=",,," GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label fx:id="posicao2" alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text=",,," GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label fx:id="posicao3" alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text=",,," GridPane.columnIndex="3" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label fx:id="posicao4" alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text=",,," GridPane.columnIndex="4" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text="Pontuação T+S*10&#10;(Soma TOTAL!!!)&#10;(Menor Melhor)" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label fx:id="tempo1" alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text="..." GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label fx:id="tempo2" alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text="..." GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label fx:id="tempo3" alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text="..." GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label fx:id="tempo4" alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text="..." GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label fx:id="solucao1" alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text="..." GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label fx:id="solucao2" alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text="..." GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label fx:id="solucao3" alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text="..." GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label fx:id="solucao4" alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text="..." GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label fx:id="resultado1" alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text="..." GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label fx:id="resultado2" alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text="..." GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label fx:id="resultado3" alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text="..." GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label fx:id="resultado4" alignment="CENTER" prefHeight="66.0" prefWidth="201.0" text="..." GridPane.columnIndex="4" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </Label>
+            <Label fx:id="operationNumber1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="122.0" prefWidth="450.0" text="Esse simulador funciona da seguinte forma.&#10;1- Embaralha N vezes&#10;2- Simula cada um dos algoritimos e marca o tempo em millisegundos.&#10;3- Realiza  (Tempo + 10 * Caminho) para estabelecer uma pontuação.&#10;4- Ordena a Posição de acordo com pontuação até agora." GridPane.columnSpan="5" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>

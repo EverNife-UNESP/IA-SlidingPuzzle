@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/br.com.finalcraft.IA-SlidingPuzzle.iml" filepath="$PROJECT_DIR$/.idea/modules/br.com.finalcraft.IA-SlidingPuzzle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/br.com.finalcraft.IA-SlidingPuzzle.main.iml" filepath="$PROJECT_DIR$/.idea/modules/br.com.finalcraft.IA-SlidingPuzzle.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/br.com.finalcraft.IA-SlidingPuzzle.test.iml" filepath="$PROJECT_DIR$/.idea/modules/br.com.finalcraft.IA-SlidingPuzzle.test.iml" />
+    </modules>
+  </component>
+</project>
